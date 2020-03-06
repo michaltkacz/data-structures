@@ -151,7 +151,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SDIZO_Data_Structures_Operations.cpp" />
+    <ClCompile Include="my_array.cpp" />
+    <ClCompile Include="program.cpp" />
+    <ClCompile Include="time_logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="my_array.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="time_logger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SDIZO_Data_Structures_Operations.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
