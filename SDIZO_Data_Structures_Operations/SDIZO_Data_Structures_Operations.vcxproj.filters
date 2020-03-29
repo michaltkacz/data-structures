@@ -24,6 +24,24 @@
     <ClCompile Include="program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="text_user_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_type.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_heap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ds_exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_rbtree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -33,6 +51,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="my_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text_user_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ds_exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_rbtree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
