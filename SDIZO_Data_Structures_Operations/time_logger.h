@@ -12,7 +12,7 @@ public:
 	double get_time_span() const;
 
 	void reset();
-	void save_to_file();
+	void save_to_file(std::string file_name);
 	double mean();
 
 private:

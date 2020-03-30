@@ -233,6 +233,7 @@ void my_array::print() const
 
 	for (int i = 0; i < size_; i++)
 	{
-		std::cout << tab_[i] << std::endl;
+		std::cout << tab_[i] << ", ";
 	}
+	std::cout << std::endl;
 }

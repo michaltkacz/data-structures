@@ -13,10 +13,6 @@ my_rbtree::my_rbtree()
 	cp[0] = 179;
 
 	// strażnik
-	//nil_.color = 'B';
-	//nil_.parent = &nil_;
-	//nil_.left = &nil_;
-	//nil_.right = &nil_;
 	nil_ = new node;
 	nil_->parent = nil_;
 	nil_->left = nil_;
@@ -40,7 +36,7 @@ my_rbtree::my_rbtree(int* tab, int size) : my_rbtree()
 
 my_rbtree::~my_rbtree()
 {
-	release(root_);
+	delete_subtree(root_);
 	delete nil_;
 }
 
@@ -299,14 +295,14 @@ void my_rbtree::print_tree_(std::string sp, std::string sn, node* n) const
 	}
 }
 
-void my_rbtree::release(node* p)
+void my_rbtree::delete_subtree(node* p)
 {
 	if (p != nil_)
 	{
 		// usuwamy lewe poddrzewo
-		release(p->left);
+		delete_subtree(p->left);
 		// usuwamy prawe poddrzewo
-		release(p->right);
+		delete_subtree(p->right);
 		// usuwamy węzeł
 		delete p;               
 	}

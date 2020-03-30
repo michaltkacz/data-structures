@@ -1,4 +1,6 @@
 ﻿#include "time_logger.h"
+#include <fstream>
+#include <iomanip>
 
 using namespace std::chrono;
 using namespace std;
@@ -24,9 +26,14 @@ void time_logger::reset()
 	times_.clear();
 }
 
-void time_logger::save_to_file()
+void time_logger::save_to_file(std::string file_name)
 {
-	//...
+	std::ofstream fout(file_name, ios::out | ios::app);
+	if(fout.is_open())
+	{
+		fout << std::fixed << std::setprecision(9) << mean() << endl;
+	}
+	fout.close();
 }
 
 double time_logger::mean()
@@ -43,6 +50,6 @@ double time_logger::mean()
 
 void time_logger::calculate_time_span()
 {
-	time_span_ = duration_cast<duration<double>>(start_time_ - stop_time_).count();
+	time_span_ = duration_cast<duration<double>>(stop_time_ - start_time_).count();
 	times_.push_back(time_span_);
 }

@@ -188,8 +188,8 @@ bool my_list::contains(int value) const
 		{
 			return true;
 		}
+		current = current->next;
 	}
-
 	return false;
 }
 

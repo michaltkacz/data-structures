@@ -151,22 +151,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="data_generator.cpp" />
     <ClCompile Include="ds_exception.cpp" />
     <ClCompile Include="menu_type.h" />
     <ClCompile Include="my_array.cpp" />
     <ClCompile Include="my_heap.cpp" />
     <ClCompile Include="my_list.cpp" />
     <ClCompile Include="my_rbtree.cpp" />
+    <ClCompile Include="output_data_converter.cpp" />
     <ClCompile Include="program.cpp" />
+    <ClCompile Include="program_manager.cpp" />
     <ClCompile Include="text_user_interface.cpp" />
     <ClCompile Include="time_logger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="data_generator.h" />
     <ClInclude Include="ds_exception.h" />
     <ClInclude Include="my_array.h" />
     <ClInclude Include="my_heap.h" />
     <ClInclude Include="my_list.h" />
     <ClInclude Include="my_rbtree.h" />
+    <ClInclude Include="output_data_converter.h" />
+    <ClInclude Include="program_manager.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="text_user_interface.h" />
     <ClInclude Include="time_logger.h" />

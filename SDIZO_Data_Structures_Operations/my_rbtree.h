@@ -29,7 +29,7 @@ private:
 
 	void print_tree_(std::string sp, std::string sn, node* n) const;
 
-	void release(node* p);
+	void delete_subtree(node* p);
 	void rotate_left(node* a);
 	void rotate_right(node* a);
 
