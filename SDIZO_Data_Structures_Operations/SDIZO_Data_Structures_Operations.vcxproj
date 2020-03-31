@@ -161,7 +161,6 @@
     <ClCompile Include="output_data_converter.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="program_manager.cpp" />
-    <ClCompile Include="text_user_interface.cpp" />
     <ClCompile Include="time_logger.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -174,7 +173,6 @@
     <ClInclude Include="output_data_converter.h" />
     <ClInclude Include="program_manager.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="text_user_interface.h" />
     <ClInclude Include="time_logger.h" />
   </ItemGroup>
   <ItemGroup>

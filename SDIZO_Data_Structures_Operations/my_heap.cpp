@@ -136,6 +136,8 @@ void my_heap::print_array() const
 	{
 		std::cout << tab_[i] << ", ";
 	}
+
+	std::cout << std::endl;
 }
 
 void my_heap::print_levels() const
@@ -166,7 +168,7 @@ void my_heap::print_levels() const
 		}
 	}
 
-	std::cout << '\n';
+	std::cout << std::endl;
 }
 
 

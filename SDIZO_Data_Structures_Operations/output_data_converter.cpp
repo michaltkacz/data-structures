@@ -12,8 +12,10 @@ output_data_converter::output_data_converter()
 
 	final_output_ = "";
 
-	data_sizes_size_ = 10;
-	data_sizes_= new int[data_sizes_size_]{ 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000 };
+	data_sizes_size_ = 20;
+	//data_sizes_= new int[data_sizes_size_]{ 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000 };
+	data_sizes_= new int[data_sizes_size_] { 5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000,
+											55000, 60000, 65000, 70000, 75000, 80000, 85000, 90000, 95000, 100000 };
 }
 
 output_data_converter::~output_data_converter()
